@@ -2,8 +2,14 @@ from django.db import models
 
 
 class Place(models.Model):
-    place_id = models.CharField(max_length=42)
-    name = models.CharField(max_length=100)
-    address = models.CharField(max_length=100)
-    phone_number = models.CharField(max_length=100)
-    rating = models.DecimalField(max_digits=2, decimal_places=1)
+    place_id = models.TextField()
+    name = models.TextField()
+    address = models.TextField()
+    maps_url = models.TextField()
+
+# Model         Google Maps API
+# --------------------------------
+# place_id      place_id
+# name          name
+# address       formatted_address
+# maps_url      url
