@@ -1,5 +1,5 @@
-from django.shortcuts import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("Esta es una vista")
+    return render(request, "index.html")

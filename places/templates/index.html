@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monkey Places</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <form action="" method="get">
+      {% csrf_token %}
+      <input type="text" id="place" name="place" required />
+      <input type="submit" value="Search" />
+    </form>
+  </body>
+</html>
