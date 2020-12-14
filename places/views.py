@@ -12,4 +12,4 @@ def index(request):
         for ids in places_ids:
             post_places(ids)
 
-    return render(request, "index.html", {})
+    return render(request, "index.html")
