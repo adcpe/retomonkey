@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 nav {
   display: flex;
   justify-content: end;
@@ -8,4 +14,15 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+main p {
+  width: 30%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  main p {
+    width: 100%;
+  }
 }
