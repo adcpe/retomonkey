@@ -29,6 +29,8 @@ SECRET_KEY = '*rg@lyvp5#jdh^d$gv!nifjvsq8gighv@x-m9tg*7nz36%(@e1'
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'retomonkey.herokuapp.com']
+CSRF_COOKIE_DOMAIN = ['127.0.0.1',
+                      'retomonkey.herokuapp.com', '.googleapis.com']
 
 
 # Application definition
