@@ -1,5 +1,4 @@
 places/.env
-staticfiles/
 
 ### Django ###
 *.log
