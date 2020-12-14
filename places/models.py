@@ -2,10 +2,10 @@ from django.db import models
 
 
 class Place(models.Model):
-    place_id = models.CharField(max_length=100)
-    name = models.CharField(max_length=50)
-    address = models.CharField(max_length=150)
-    maps_url = models.CharField(max_length=200)
+    place_id = models.TextField()
+    name = models.TextField()
+    address = models.TextField()
+    maps_url = models.TextField()
 
 
 """
